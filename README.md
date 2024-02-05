@@ -1,0 +1,2 @@
+# MyLyrics
+Automatic lyrics layout
