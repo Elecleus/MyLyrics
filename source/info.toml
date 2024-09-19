@@ -1,0 +1,43 @@
+[title]
+content = "打上花火(Uchiagehanabi)"
+format = "jp"
+size = 20
+
+[subtitle]
+exist = true
+content = "烟火绽放 | 单人版"
+format = "zh-cn"
+size = 12
+
+[artist]
+exist = true
+content = "米津玄師"
+format = "jp"
+size = 15
+
+[cover]
+exist = true
+name = "cover"
+format = "jpg"
+
+[[other_info]]
+former_text = "作词:"
+former_format = "zh-cn"
+later_text = "米津玄師"
+later_format = "jp"
+
+[[other_info]]
+former_text = "作曲:"
+former_format = "zh-cn"
+later_text = "米津玄師"
+later_format = "jp"
+
+[[other_info]]
+former_text = "编曲:"
+former_format = "zh-cn"
+later_text = "米津玄師"
+later_format = "jp"
+
+[groups]
+num = 3
+format = [ "romaji", "jp", "zh-cn" ]
