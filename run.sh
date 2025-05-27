@@ -1,0 +1,1 @@
+typst c ./main.typ --font-path ./fonts

@@ -4,17 +4,15 @@
 )
 #set par(
   // hanging-indent: 1em,
-  leading: 0.5em
+  leading: 0.5em,
 )
-#set smartquote(
-  enabled: false
-)
+#set smartquote(enabled: false)
 
 #let format(kind) = {
   if kind == "jp" {
     return (
       font: "Noto Serif JP",
-      lang: "jp"
+      lang: "jp",
     )
   }
 
@@ -22,7 +20,7 @@
     return (
       font: "Noto Serif SC",
       lang: "zh",
-      region: "cn"
+      region: "cn",
     )
   }
 
@@ -57,22 +55,22 @@
     box(
       height: 3.5cm,
       width: auto,
-      image("source/" + info.cover.name + "." + info.cover.format)
+      image("source/" + info.cover.name + "." + info.cover.format),
     )
   },
   align(
     horizon,
     grid(
       columns: 1fr,
-      rows:auto,
+      rows: auto,
       row-gutter: 3mm,
       align(
         center,
         text(
           ..format(info.title.format),
           size: info.title.size * 1pt,
-          info.title.content
-        )
+          info.title.content,
+        ),
       ),
       if info.subtitle.exist {
         align(
@@ -80,8 +78,8 @@
           text(
             ..format(info.subtitle.format),
             size: info.subtitle.size * 1pt,
-            info.subtitle.content
-          )
+            info.subtitle.content,
+          ),
         )
       },
       align(
@@ -89,11 +87,11 @@
         text(
           ..format(info.artist.format),
           size: info.artist.size * 1pt,
-          info.artist.content
-        )
+          info.artist.content,
+        ),
       )
-    )
-  )
+    ),
+  ),
 )
 
 #line(length: 100%, stroke: (dash: "dashed"))
@@ -111,14 +109,12 @@
 #let groups_num = info.groups.num
 #let group_length = groups.at(0).len()
 #for i in range(group_length) {
-  box(
-    for j in range(groups_num) {
-      let object = groups.at(j).at(i)
-      if object != "" {
-        text(..format(info.groups.format.at(j)), object)
-        linebreak()
-      }
+  box(for j in range(groups_num) {
+    let object = groups.at(j).at(i)
+    if object != "" {
+      text(..format(info.groups.format.at(j)), object)
+      linebreak()
     }
-  )
+  })
   parbreak()
-} 
+}
