@@ -1,17 +1,17 @@
 [title]
-content = "なんでもないや (movie ver.)"
+content = "Lemon"
 format = "jp"
 size = 24
 
 [subtitle]
 exist = true
-content = "君の名は。"
-format = "jp"
+content = "日剧《非自然死亡》主题曲"
+format = "zh-cn"
 size = 14
 
 [artist]
 exist = true
-content = "RADWIMPS"
+content = "米津玄師"
 format = "jp"
 size = 17
 
@@ -23,13 +23,19 @@ format = "jpg"
 [[other_info]]
 former_text = "作词:"
 former_format = "zh-cn"
-later_text = "野田洋次郎"
+later_text = "米津玄師"
 later_format = "jp"
 
 [[other_info]]
 former_text = "作曲:"
 former_format = "zh-cn"
-later_text = "野田洋次郎"
+later_text = "米津玄師"
+later_format = "jp"
+
+[[other_info]]
+former_text = "编曲:"
+former_format = "zh-cn"
+later_text = "米津玄師/室屋光一郎"
 later_format = "jp"
 
 [groups]
